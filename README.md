@@ -1,16 +1,58 @@
-# React + Vite
+# React Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React application built to practice and demonstrate client-side routing with **React Router DOM**. It features a multi-page layout with smooth navigation between Home, Product, Service, and About views — no page reloads required.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Client-Side Routing** — Powered by `react-router-dom` using `BrowserRouter`, `Routes`, and `Route`.
+- **Active Link Highlighting** — Navigation bar uses `NavLink` to visually highlight the currently active page.
+- **Multiple Pages** — Home, Product, Service, and About, each rendered as a separate route/component.
+- **Modern Tooling** — Built with Vite for fast development and hot module reloading.
+- **Styled with Tailwind CSS** — Utility-first styling for a clean, responsive UI.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router DOM
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/trisha-pandey/react-routing.git
+   cd react-routing
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the local URL shown in your terminal (typically `http://localhost:5173`).
+
+## Project Structure
+
+```
+react-routing/
+├── src/
+│   ├── App.jsx              # Root component rendering Nav + routes
+│   ├── main.jsx              # Entry point, wraps App in BrowserRouter
+│   ├── components/
+│   │   ├── Nav.jsx           # Navigation bar with active link styling
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Product.jsx
+│   │   └── Service.jsx
+│   └── routes/
+│       └── Mainroutes.jsx    # Route definitions
+└── package.json
+```
+
+## Author
+
+**Trisha Pandey**
+[GitHub](https://github.com/trisha-pandey)
